@@ -27,6 +27,14 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        branch: 'master'
+      },
+      src: ['**']
+    },
+
     // Project settings
     config: config,
 

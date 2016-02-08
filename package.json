@@ -45,5 +45,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "grunt-gh-pages": "^1.0.0"
   }
 }
