@@ -18,9 +18,9 @@ cd dist
 git config --global user.name "Travis-CI" || exit 1
 git config --global user.email "dev@castimirano.com" || exit 1
 
-git init
+git init || exit 1
 git add -A . || exit 1
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
-git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" $DESTINATION_BRANCH > /dev/null 2>&1
+git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" $DESTINATION_BRANCH > /dev/null 2>&1 || exit 1
 
 echo "Deployed successfully."
