@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - '4.2.1'
 before_script:
-  - npm install -g grunt-cli
+  - npm install -g grunt-cli bower
+  - npm install
+  - bower install
   - chmod +x ./scripts/deploy.sh
 script:
   - ./scripts/deploy.sh
