@@ -47,6 +47,7 @@
     }
   },
   "dependencies": {
+    "grunt-contrib-imagemin": "^1.0.0",
     "grunt-gh-pages": "^1.0.0"
   }
 }
