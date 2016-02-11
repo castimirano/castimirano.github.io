@@ -14,7 +14,7 @@ git checkout -B $SOURCE_BRANCH
 grunt build || exit 1
 
 echo "Pushing new content to $ORIGIN_URL"
-cd www
+cd dist
 git config user.name "Travis-CI" || exit 1
 git config user.email "dev@castimirano.com" || exit 1
 
